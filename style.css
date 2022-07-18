@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Nunito+Sans:wght@900&family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Nunito+Sans:wght@600;900&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                                /* Header Section */
+
+nav {
+    display: flex;
+    padding: 20px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-div {
+    cursor: pointer;
+}
+
+nav .logo {
+    font-family: 'Montserrat', sans-serif, 'Nunito Sans', 'Roboto';
+    color: #00a0a0;
+    font-size: 30px;
+}
+
+.right-side {
+    display: flex;
+    position: absolute;
+    right: 40px;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: auto 15px auto 0;
+}
+
+.list-item {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+    width: 125px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+
+.list-item :hover {
+    cursor: pointer;
+    color: #00bebe;
+    transition: all 0.3s ease;
+}
+
+.browse {
+    display: flex;
+    align-items: center;
+    height: 40px
+}
+
+#browse-text {
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+#arrow-down {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.browse p {
+    margin: auto 20px auto 7px;
+}
+
+.browse:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: #00bebe;
+}
+
+.hamburger {
+    height: 2px;
+    width: 20px;
+    background-color: rgb(65, 65, 65);
+    margin: 3px;
+    display: grid;
+}
+
+.highlight-bar {                                                                                       /* Class to add to active tab*/
+    width: 100%;
+    height: 5px;
+    color: red;
+}
+
+.sign-up {
+    border-radius: 20px;
+    border: white;
+    background-color: red;
+    padding: 5px 25px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.sign-up:hover {
+    cursor: pointer;
+}
+
+.bottom-header {
+    background-color: rgb(225, 225, 225);
+    display: flex;
+    padding: 15px 10px;
+}
+
+#location-img {
+    height: 25px;
+    width: 25px;
+}
+
+.store {
+    position: absolute;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.store:hover {
+    transform: scale(1.0511);
+    cursor: pointer;
+    color: #00a0a0;
+}
+
+.store-text {
+    margin: auto 15px auto 5px;
+}
+
+.store-text p {
+    font-size: 12.5px;
+}
+.store-text span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    margin-left: 800px;
+}
+
+#search-input {
+    width: 300px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: rgba(248, 248, 248, 0.933);
+}
+
+.search-section img {
+    position: absolute;
+    left: 820px;
+}
+
+#search-img {
+    height: 15px;
+    width: 15px;
+}
+
+
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-sec {                                                                            /* Arrow to add when hovered */
+    height: 2px;
+    width: 11px;
+    background-color: black;
+    display: grid;
+}
+
+.browse-elements {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    background-color: #00a0a0;
+    position: absolute;
+    top: 36px;
+    transition: all 0.5s ease;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.browse-elements ul {
+    list-style: none;
+}
+
+.browse-link {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    padding: 11px;
+}
+
+.browse-link:hover {
+    color: black;
+}
+
+.browse-link span {
+    margin-left: 100px;
+    color: white !important;
+}
+
+.inactive {                                                                                         /* Inactive class */
+    display: none !important;
+    transition: all 0.3s ease;
+}
+
+
+/* -------------------------------------------- Hero Section ------------------------------------------------------ */
+
+.hero-section {
+    background-color: #eeee;
+    margin: 15px 15px;
+    border-radius: 11px;
+    display: flex;
+}
+
+.filter-section {
+    display: grid;
+    height: 400px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: rgba(241, 241, 241, 0.933);
+    padding: 20px;
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+#filter-heading {
+    font-size: 25px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 7px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+.filter:hover {
+    cursor: pointer;
+}
+
+                /* Product section */
+
+.product-section {
+    display: grid;
+    justify-content: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(47, 47, 47);
+    margin-top: 30px;
+}
+
+.product {
+    width: 180px;
+    height: 210px;
+    background-color: white;
+    border: lightgray solid;
+    margin: 10px;
+    border-radius: 10px;
+    border-width: thin;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.product:hover {
+    cursor: pointer;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+}
+
+
+/*----------------------------------------------- Sign Up Section ------------------------------------------------*/
+
+.sign-up-section {
+    height: 625px;
+    width: 50%;
+    padding: 25px;
+    background-color: rgb(220, 220, 220) !important;
+    z-index: 99;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+
+.input-- {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 35px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.container h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#remember-me {
+    font-weight: 100;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border: none;
+    color: white;
+}
+
+.cancel-btn {
+    height: 45px;
+    width: 250px;
+    background-color: rgb(255, 43, 43);
+}
+
+.sign-up-btn {
+    height: 45px;
+    width: 250px;
+    background-color: rgb(31, 191, 31);
+}
+
+.cancel-btn:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.sign-up-btn:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.modal-background {
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
