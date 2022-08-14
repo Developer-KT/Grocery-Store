@@ -87,3 +87,9 @@ signUp.addEventListener('click', () => {
 // ------------------------------------------------Hero Section -----------------------------------------------------
 
 
+const cancel = document.querySelector(".cancel-btn")
+
+cancel.addEventListener('click', () => {
+    signUpSect.classList.add("inactive")
+    modalBackground.classList.add("inactive")
+})
